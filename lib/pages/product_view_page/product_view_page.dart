@@ -16,11 +16,19 @@ class ProductViewPage extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              padding: const EdgeInsets.fromLTRB(8, 16, 16, 12),
               child: Row(
+                crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
                   const BackButton(),
-                  Text("Geri", style: TextStyle(color: AppColors.secondary)),
+                  Text(
+                    "Geri",
+                    style: TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600,
+                      color: AppColors.secondary,
+                    ),
+                  ),
                   const Spacer(),
                   CartButton(),
                 ],
